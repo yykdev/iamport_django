@@ -11,10 +11,10 @@
                         {% endif %}
                         <div class="card-body">
                             <p class="card-title">{{ item.name }}</p>
+                            <p class="card-text">{{ item.amount }}</p>
                             {% if item.desc %}
                             <p class="card-text">{{ item.desc }}</p>
                             {% endif %}
-                            <p class="card-text"><small class="text-muted">{{ item.amount }}</small></p>
                         </div>
                         <a href="" class="btn btn-primary btn-block">구매하기</a>
                     </div>

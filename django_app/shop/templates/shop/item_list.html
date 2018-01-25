@@ -1,4 +1,5 @@
 {% extends 'shop/layout.html' %}
+{% load humanize %}
 
 {% block content %}
     <div class="container">
@@ -11,7 +12,7 @@
                         {% endif %}
                         <div class="card-body">
                             <p class="card-title">{{ item.name }}</p>
-                            <p class="card-text">{{ item.amount }}</p>
+                            <p class="card-text" style="text-align: right">{{ item.amount|intcomma }}원</p>
                             {% if item.desc %}
                             <p class="card-text">{{ item.desc }}</p>
                             {% endif %}

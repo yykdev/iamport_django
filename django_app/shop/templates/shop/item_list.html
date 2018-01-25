@@ -1,5 +1,25 @@
 {% extends 'shop/layout.html' %}
 
 {% block content %}
-    {{ item_list }}
+    <div class="container">
+        <div class="row">
+                {% for item in item_list %}
+                <div class="col-sm-2">
+                    <div class="card">
+                        {% if item.photo %}
+                        <img class="card-img-top" src="{{ item.photo.url }}" alt="Card image cap">
+                        {% endif %}
+                        <div class="card-body">
+                            <p class="card-title">{{ item.name }}</p>
+                            {% if item.desc %}
+                            <p class="card-text">{{ item.desc }}</p>
+                            {% endif %}
+                            <p class="card-text"><small class="text-muted">{{ item.amount }}</small></p>
+                        </div>
+                        <a href="" class="btn btn-primary btn-block">구매하기</a>
+                    </div>
+                </div>
+                {% endfor %}
+        </div>
+    </div>
 {% endblock %}}

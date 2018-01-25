@@ -1,5 +1,8 @@
 # iamport_django
 
+## askDjango 강의 학습
+ - 장고-결제 시스템 연동 강좌 : [ https://nomade.kr/vod/payment/ ](https://nomade.kr/vod/payment/)
+
 ## 1. 기본 쇼핑몰 구성 만들기
 
 #### 1-1. 쇼핑몰 장고 앱 구성

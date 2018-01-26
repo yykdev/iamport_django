@@ -2,7 +2,9 @@ beautifulsoup4==4.6.0
 certifi==2018.1.18
 chardet==3.0.4
 Django==1.11.9
+iamport-rest-client==0.7.0
 idna==2.6
+jsonfield==2.0.2
 Pillow==5.0.0
 pytz==2017.3
 requests==2.18.4

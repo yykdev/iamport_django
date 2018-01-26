@@ -1,4 +1,5 @@
 {% extends 'accounts/layout.html' %}
+{% load humanize %}
 
 {% block content %}
 <div class="container">
@@ -8,7 +9,22 @@
 
             <h3>구매내역</h3>
 
-            ...
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <td>상품명</td>
+                        <td>결제가격</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for order in order_list %}
+                    <tr>
+                        <td>{{ order.name }}</td>
+                        <td class="text-right">{{ order.amount|intcomma }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
